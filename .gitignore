@@ -1,0 +1,136 @@
+# ===================================================================
+# 1. DEPENDENCIES & LOCK FILES
+# ===================================================================
+# Node.js dependencies
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+
+# Python virtual environments
+**/venv/
+**/.venv/
+**/env/
+**/.env/
+
+# Dependency logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ===================================================================
+# 2. BUILD ARTIFACTS & CACHES
+# ===================================================================
+# React build output
+/client/build
+/client/.cache
+
+# Python caches and distribution files
+/server/ai_core_service/__pycache__
+/server/ai_core_service/*.py[cod]
+/server/ai_core_service/*.egg-info
+/server/ai_core_service/dist/
+/server/ai_core_service/build/
+
+# Model caches (Hugging Face, etc.)
+/server/ai_core_service/.cache/
+
+
+# ===================================================================
+# 3. SENSITIVE & ENVIRONMENT-SPECIFIC FILES
+# ===================================================================
+# Never commit environment variables. Use .env.example instead.
+.env
+.env.*
+!.env.example
+
+# API keys and secrets
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# ===================================================================
+# 3. BUILD ARTIFACTS & CACHES
+# ===================================================================
+# React build output
+**/build/
+**/dist/
+**/.cache/
+
+# Python bytecode and distribution files
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+**/dist/
+**/build/
+
+# TypeScript build output
+**/build/
+**/dist/
+
+# ===================================================================
+# 4. USER-GENERATED & RUNTIME DATA
+# ===================================================================
+# Uploads and user data
+**/uploads/
+**/assets/*
+!**/assets/.gitkeep
+
+# Generated indexes and caches
+**/faiss_indices/
+**/indexes/
+**/.cache/
+
+# Temporary files
+**/tmp/
+**/temp/
+
+# ===================================================================
+# 5. OS & EDITOR CONFIGURATION
+# ===================================================================
+
+.DS_Store
+Thumbs.db
+**/.vscode/
+**/.idea/
+**/.history/
+**/*.swp
+**/*.swo
+# Qobo platform files and folders
+**/qobo/
+**/qobo.*
+**/Qobo/
+**/Qobo.*
+
+# ===================================================================
+# 6. LOG FILES
+# ===================================================================
+*.log
+**/logs/
+
+# ===================================================================
+# 7. DOCKER & CONTAINER FILES
+# ===================================================================
+# Docker build context
+**/.dockerignore
+
+# ===================================================================
+# 8. TEST & COVERAGE FILES
+# ===================================================================
+**/coverage/
+**/.nyc_output/
+**/.coverage
+
+# ===================================================================
+# 9. MCP SERVER SPECIFIC
+# ===================================================================
+# MCP server build artifacts
+**/mcp-servers/**/build/
+**/mcp-servers/**/dist/
+
+# ===================================================================
+# 10. BACKUP & TEMPORARY FILES
+# ===================================================================
+**/backup_assets/
+**/682d73135a427c0d9205b1dc/ 
